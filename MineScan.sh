@@ -6,20 +6,28 @@
 ## Concept and code by Logic & PHX2600 crew   ##
 ################################################
 
+#Check for Sanity
+
+if [ ! -e /usr/bin/nmap ]; then
+	echo "Sorry you dont seen to have Nmap installed."
+	echo "Please install Nmap and try again, Thanks!"
+	exit
+fi
+
 #Prepare the environment
 
 if [ ! -e current.txt ]; then
-    touch current.txt
+	touch current.txt
 else
 	echo "" > current.txt
 fi
 
 if [ ! -e previous.txt ]; then
-    touch previous.txt
+	touch previous.txt
 fi
 
 if [ ! -e results.txt ]; then
-    touch results.txt
+	touch results.txt
 fi
 
 # Run Nmap, look for minecraft servers (-p 25565), exclude previously scanned hosts (--excludefile)

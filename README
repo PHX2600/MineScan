@@ -1,0 +1,16 @@
+SYNTAX:
+
+MineScan.sh [NetRange]
+
+Where [NetRange] is dot slash notation for a network segment.
+
+Example:
+
+	[jimmy@timmy:~/Desktop/MineScan]$ ./MineScan.sh 68.99.232.0/24
+	New servers found: 2
+	###############
+	68.99.232.9
+	68.99.232.211
+	###############
+	Total Servers: 2
+
