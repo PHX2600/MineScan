@@ -36,22 +36,11 @@ fi
 
 nmap -p 25565 -PN --excludefile previous.txt -oG current.txt $1 > /dev/null 2>&1
 
-#Sanitize our output from Nmap
-cat current.txt | grep Up | awk '{print $2}' > current_sane.txt
+#Sanitize our output from Nmap and append new IP's to our running scanned IP List
+cat current.txt | grep Up | awk '{print $2}' >> previous.txt
 
-#add new IP's to our running scanned IP List
-cat previous.txt current_sane.txt > /tmp/temp.txt
-cp /tmp/temp.txt previous.txt
-
-#Look for servers with MC port open
-grep open current.txt > /tmp/temp.txt
-
-#Sanitize our output from grep
-cat /tmp/temp.txt | awk '{print $2}' > /tmp/open.txt
-
-#Add new machines to our running list of open boxes
-cat results.txt /tmp/open.txt > /tmp/temp.txt
-cp /tmp/temp.txt results.txt
+#Look for servers with MC port open Sanitize our output from grep and append to running servers list.
+cat current.txt | grep open | awk '{print $2}' >> results.txt
 
 #Clean up and sort our bounty!
 cat results.txt | sort | uniq > /tmp/temp.txt

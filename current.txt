@@ -1,4 +1,4 @@
-# Nmap 5.21 scan initiated Tue Sep 13 09:39:04 2011 as: nmap -p 25565 -PN --excludefile previous.txt -oG current.txt 68.99.232.0/24 
+# Nmap 5.21 scan initiated Tue Sep 13 12:56:49 2011 as: nmap -p 25565 -PN --excludefile previous.txt -oG current.txt 68.99.232.0/24 
 Host: 68.99.232.0 (ip68-99-232-0.ph.ph.cox.net)	Status: Up
 Host: 68.99.232.0 (ip68-99-232-0.ph.ph.cox.net)	Ports: 25565/filtered/tcp/////
 Host: 68.99.232.1 (ip68-99-232-1.ph.ph.cox.net)	Status: Up
@@ -511,4 +511,4 @@ Host: 68.99.232.254 (ip68-99-232-254.ph.ph.cox.net)	Status: Up
 Host: 68.99.232.254 (ip68-99-232-254.ph.ph.cox.net)	Ports: 25565/filtered/tcp/////
 Host: 68.99.232.255 (ip68-99-232-255.ph.ph.cox.net)	Status: Up
 Host: 68.99.232.255 (ip68-99-232-255.ph.ph.cox.net)	Ports: 25565/filtered/tcp/////
-# Nmap done at Tue Sep 13 09:39:06 2011 -- 256 IP addresses (256 hosts up) scanned in 2.04 seconds
+# Nmap done at Tue Sep 13 12:56:51 2011 -- 256 IP addresses (256 hosts up) scanned in 2.05 seconds
