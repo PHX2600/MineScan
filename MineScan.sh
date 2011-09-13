@@ -9,7 +9,7 @@
 #Check for Sanity
 
 if [ ! -e /usr/bin/nmap ]; then
-	echo "Sorry you dont seen to have Nmap installed."
+	echo "Sorry you dont seem to have Nmap installed."
 	echo "Please install Nmap and try again, Thanks!"
 	exit
 fi
